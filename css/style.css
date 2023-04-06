@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 9px 0px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background:#c2edea;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* .sticky{
+   
+    padding: 10px,15px; */
+
+
+
+header,.fixed-header,.logo {
+    color: Black;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 80px;
+    margin-top: -7px;
+}
+.logo span{
+    color:#ff0157;
+}
+.nav-menu{
+    position: relative;
+    display: flex;
+    padding-right: 60px;
+}
+.nav-menu li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-menu li{
+    list-style: none;
+    margin-left: 55px;
+}
+
+.nav-menu li a:hover{
+
+    color: red;
+    text-decoration: underline;
+    padding: 3px;
+
+}
+
+.Banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/Food-BG1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.Banner .content h2{
+    font-size: 5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+.Banner .content p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.button{
+    font-size: 1.4em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 16px 51px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s
+}
+
+.button:hover{
+    letter-spacing: 8px;
+}
+
+.about{
+    padding: 69px 254px 0 131px;
+    margin-left: 88px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+.row .about-col{
+    width: 40%;
+    position: relative;
+}
+
+.row .about-col .about-image{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 112px 0 0px;
+}
+
+.row .about-col .about-image img{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+}
+.about-title{
+    color: #000000;
+    font-size: 2em;
+}
+.about-title span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Menu */
+.menu{
+    padding: 60px 0 1px 0;
+}
+.text-title{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.headline{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.text-title, span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box{
+    width: 350px;
+    margin: 23px;
+    border: 16px solid white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.185);
+}
+
+.menu .content .box .menu-image{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .menu-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .image-text{
+    padding: 27px 0 13px;
+}
+
+.menu .content .box .image-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+.menu .content .box .image-text span{
+    color: #ff0157;
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 8px;
+}
+
+/* Experts */
+
+.expert{
+    padding: 60px 0 1px 0;
+}
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.expert .content .box{
+    width: 284px;
+    margin: 25px;
+
+}
+.expert .content .box .expert-image{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.expert .content .box .expert-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .image-text {
+    padding: 27px 0 13px;
+     font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding: 60px 0 1px 0;
+    background-image: url(../Images/Food-BG2.jpg);
+    background-size: cover;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.testimonials .title .testi-headline {
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+.testimonials .content .box{
+    width: 300px;
+    margin: 20px;
+    padding: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+.testimonials .content .box .testi-image{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .box .testi-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .image-text{
+    text-align: center;
+    line-height: 25px;
+}
+.testimonials .content .box .image-text p{
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+.testimonials .content .box .image-text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Contact */
+
+.contact{
+   
+    background: url(../Images/Food-BG3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1px 0 50px 0;
+    margin-bottom: 20px;
+}
+
+.contact .title{
+    margin-top: 60px;
+}
+
+.contact-form{
+    padding: 83px 99px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.8);
+    max-width: 457px;
+    margin-top: 40px;
+    margin-left: 102px;
+    border-radius: 17px;
+}
+
+.contact-form h3{
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px
+}
+
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-box input{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.comment {
+height: 40px;
+}
+
+.btn2 a{
+    font-size: 1.4em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 16px 51px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.btn2 a:hover{
+    letter-spacing: 8px;
+}
+/* Footer */
+
+footer{
+    margin-top: 15px;
+    padding: 39px 40px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+    background: #f2844e;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: white;
+}
